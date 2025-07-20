@@ -67,4 +67,20 @@ A tertiary panel on the right side has a list of filters for the numerical attri
 
 ## Questions
 
+ - How do I get access to the Web API? Do I need an API key?
+ - What restrictions are there to the API? How frequently can I use it?
+ - What are the ranges for the numerical attributes of each Spotify track/song?
+ - How many unique songs are there on the above datasets?
+ - How many songs have null/missing values for the numerical attributes?
+ - What are the unique list of words used in Spotify playlists?
+    - What general list of "articles" ("a", "the", "I") should be excluded from analysis of playlist titles?
+ - What are the most/least used words in Spotify playlist titles?
+    - How long does it take to then find all playlists that contain a given song? And then count the frequency of words?
+ - What are the list of possible `genre` a song can have?
+    - Does excluding words on the `genre` list consequently remove too many words for the "vibe" results on the dashboard to be meaningful?
+
+
 ## What This is NOT
+
+ - This does not have to reflect the current real-time state of the Spotify songs.
+ - This is not a machine learning/self-supervised learning clustering exercise nor a full recommender system per se (though that could make for interesting future work).
