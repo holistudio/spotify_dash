@@ -46,9 +46,24 @@ Finding a song based on a vibe/mood/feeling remains a challenge.
 
 ## Assumptions
 
+ - Assume user is familiar with interactive dashboards
+ - Behind the scenes of Tableau dashboard should be "simple" - one Excel/csv table from which data is visualized.
+
 ## User Stories
 
+ 1. User selects a couple words describing the mood, style, and/or genre of music they want.
+ 2. Dashboard displays top X most popular songs and and top X most popular artist that show up in playlists titled with those words.
+ 3. User can also select an artist from the above list and then a word cloud appears showing frequency of words used for playlists containing their songs
+     - Also a bar chart showing the counting frequency for those words
+ 4. User can filter all results by tempo of songs showing up in the lists (average bpm) or other numerical features (TBD based on Web API).
+
 ## User Interaction and Design
+
+Likely a single dashboard with two halves:
+ - one half has a search bar and shows a ranked list of songs and corresponding artists based on the search query
+ - other half shows either a word cloud or ranked list of words for a particular artist
+
+A tertiary panel on the right side has a list of filters for the numerical attributes of the songs.
 
 ## Questions
 
