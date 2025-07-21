@@ -59,9 +59,11 @@ Finding a song based on a vibe/mood/feeling remains a challenge.
 
 ## User Interaction and Design
 
-Likely a single dashboard with two halves:
- - one half has a search bar and shows a ranked list of songs and corresponding artists based on the search query
- - other half shows either a word cloud or ranked list of words for a particular artist
+Likely a single dashboard with two vertical halves:
+ - The left half has a search bar and shows a ranked list of songs and corresponding artists based on the search query.
+ - The right half shows either a word cloud or ranked list of words for a particular artist.
+   - Ideally, this right half display is based on the artist of the songs the user clicks on the left half.
+   - But can also just be based on another standalone search bar for artist.
 
 A tertiary panel on the right side has a list of filters for the numerical attributes of the songs.
 
