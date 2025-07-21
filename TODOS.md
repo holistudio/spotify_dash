@@ -2,6 +2,8 @@
 
 ## Data Collection
 
+ - [ ] Download datasets
+
 ## Data Cleaning
 
 ## EDA
