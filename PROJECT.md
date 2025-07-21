@@ -46,8 +46,8 @@ Finding a song based on a vibe/mood/feeling remains a challenge.
 
 ## Assumptions
 
- - Assume user is familiar with interactive dashboards
- - Behind the scenes of Tableau dashboard should be "simple" - one Excel/csv table from which data is visualized.
+ - Assume user is familiar with interactive dashboards.
+ - Behind the scenes of Tableau dashboard should be "simple" - one static Excel/csv table from which data is visualized will do.
 
 ## User Stories
 
