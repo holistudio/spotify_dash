@@ -6,7 +6,3 @@ repos:
     -   id: check-yaml
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
--   repo: https://github.com/nbdime/nbdime
-    rev: 4.0.2
-    hooks:
-    -   id: nbdime-cleared
