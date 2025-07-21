@@ -3,6 +3,7 @@
 ## Data Collection
 
  - [ ] Download datasets
+ - [ ] Count number of songs in datasets.
 
 ## Data Cleaning
 
