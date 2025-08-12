@@ -2,8 +2,8 @@
 
 ## Data Collection
 
- - [ ] Download Spotify Million Playlist Dataset.
- - [ ] Download Spotify Tracks Dataset.
+ - [x] Download Spotify Million Playlist Dataset.
+ - [x] Download Spotify Tracks Dataset.
  - [ ] Count number of unique songs in datasets.
  - [ ] Investigate Spotify Web API for additional track features (e.g., `energy`, `valence`).
 
