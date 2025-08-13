@@ -43,17 +43,11 @@ start_time = datetime.datetime.now()
 n = 0
 
 for track_id in track_ids:
-    t_elapsed = datetime.datetime.now()-start_time
-    perc_complete = n*100/total_tracks
-    rate = t_elapsed/perc_complete
-    t_remaining = (100 - perc_complete) * rate
-    print(f"{track_id}, {n*100/total_tracks:.2f}%, {t_elapsed}, Est. Time Remaining={t_remaining}")
-
-    # Step 1: Get row from tracks_df
+    # get matching row from tracks_df
     find_track = tracks_df['track_id'] == track_id
     track_row = tracks_df[find_track].iloc[0].copy()
 
-    # Step 2: Add blank playlist_names
+    # add blank playlist_names
     track_row['playlist_names'] = ""
 
     track_uri = f'spotify:track:{track_id}'
@@ -67,11 +61,21 @@ for track_id in track_ids:
                 # print(row['playlist_name'])
                 playlist_dict[track_id].append(row['playlist_name'])
     
-    # Step 3: Fill with values from test_list
+    # fill in playlist_names
     track_row['playlist_names'] = ', '.join(playlist_dict[track_id])  # Or keep as list: test_list
 
     # Append to play_df
     play_df = pd.concat([play_df, pd.DataFrame([track_row])], ignore_index=True)
+    
+    # track progress
+    n +=1
+
+    t_elapsed = datetime.datetime.now()-start_time
+    perc_complete = n*100/total_tracks
+    rate = t_elapsed.total_seconds()/perc_complete
+    t_remaining = (100 - perc_complete) * rate
+    print(f"{track_id}, {n*100/total_tracks:.2f}%, {t_elapsed}, Est. Time Remaining={t_remaining/60:.2f} mins")
+
 
 with open("playlist_names.json",'w') as f:
     json.dump(playlist_dict,f)
