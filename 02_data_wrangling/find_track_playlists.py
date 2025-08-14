@@ -29,7 +29,7 @@ track_ids = [x[:-1] for x in test]
 total_tracks = len(track_ids)
 print('...done')
 
-track_ids = track_ids[:10]
+# track_ids = track_ids[:10]
 
 print('')
 # Create a blank DataFrame with same columns + one extra
@@ -41,7 +41,7 @@ for track_id in track_ids:
 
 start_time = datetime.datetime.now()
 n = 0
-
+p_count = 0
 for track_id in track_ids:
     # get matching row from tracks_df
     find_track = tracks_df['track_id'] == track_id
@@ -69,12 +69,14 @@ for track_id in track_ids:
     
     # track progress
     n +=1
-
-    t_elapsed = datetime.datetime.now()-start_time
     perc_complete = n*100/total_tracks
-    rate = t_elapsed.total_seconds()/perc_complete
-    t_remaining = (100 - perc_complete) * rate
-    print(f"{track_id}, {n*100/total_tracks:.2f}%, {t_elapsed}, Est. Time Remaining={t_remaining/60:.2f} mins")
+    
+    if perc_complete >= p_count:
+        t_elapsed = datetime.datetime.now()-start_time
+        rate = t_elapsed.total_seconds()/perc_complete
+        t_remaining = (100 - perc_complete) * rate
+        print(f"{track_id}, {n*100/total_tracks:.2f}%, {t_elapsed}, Est. Time Remaining={t_remaining/60:.2f} mins")
+        p_count += 1
 
 
 with open("playlist_names.json",'w') as f:
