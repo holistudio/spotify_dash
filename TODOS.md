@@ -16,9 +16,9 @@
  - [x] Merge datasets to create a comprehensive song/playlist/artist table.
  - [ ] Decide on how to handle songs with multiple artists
  - [ ] For Tableau
-    - [ ] Dataset 1: Rows of different words, columns of track_ids, each cell value = word frequency count for each track 
+    - [x] Dataset 1: Rows of different words, columns of track_ids, each cell value = word frequency count for each track 
     - [ ] Dataset 2: Rows of different words, columns of artists
-    - [ ] Dataset 3: Rows of track_ids, columns of artist numerical features
+    - [x] Dataset 3: Rows of track_ids, columns of artist numerical features
 
 ## EDA
 
