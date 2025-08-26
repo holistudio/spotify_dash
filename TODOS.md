@@ -14,10 +14,10 @@
  - [ ] Handle missing values for numerical attributes of songs.
     - [x] For now, use only songs in the Tracks Dataset that can be found in the first 100,000 playlists in the Millon Playlist dataset.
  - [x] Merge datasets to create a comprehensive song/playlist/artist table.
- - [ ] Decide on how to handle songs with multiple artists
+ - [x] Decide on how to handle songs with multiple artists
  - [ ] For Tableau
     - [x] Dataset 1: Rows of different words, columns of track_ids, each cell value = word frequency count for each track 
-    - [ ] Dataset 2: Rows of different words, columns of artists
+    - [x] Dataset 2: Rows of different words, columns of artists
     - [x] Dataset 3: Rows of track_ids, columns of artist numerical features
 
 ## EDA
