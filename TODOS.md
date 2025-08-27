@@ -17,7 +17,7 @@
  - [x] Merge datasets to create a comprehensive song/playlist/artist table.
  - [x] Decide on how to handle songs with multiple artists
 
- - [ ] Drop the word 'stuff' from the list of playlist words.
+ - [x] Drop the word 'stuff' from the list of playlist words.
 
  - [ ] For Tableau
     - [x] Dataset 1: Rows of different words, columns of track_ids, each cell value = word frequency count for each track 
@@ -27,11 +27,10 @@
 
 ## EDA
 
-
  - [ ] Determine how to rank songs based on a list of "mood words" (e.g., frequency in relevant playlist titles, popularity).
     - [x] Analyze distribution (mean, min, max) frequency of playlist words for all songs/tracks
     - [x] Decide on a cut-off threshold for "common enough" words to consider in ranking songs.
-    - [ ] Ranking issue: Consider normalizing row-wise 'words_trackID.csv' - otherwise rankings not affected by uncommonly used playlist words.
+    - [x] Ranking issue: Consider normalizing row-wise 'words_trackID.csv' - otherwise rankings not affected by uncommonly used playlist words.
 
  - [ ] Preview Tableau dashboards
     - [x] Using Dataset 1: Identify top X most popular songs and artists for given mood words.
@@ -45,8 +44,10 @@
 
 ## Dashboard
 
+ - [ ] Basic wireframe draft.
  - [ ] Design Tableau dashboard layout (left half for search/ranked lists, right half for word cloud/artist details, tertiary panel for filters).
  - [ ] Implement search functionality for mood keywords.
+    - [ ] Simulate the 'LIKE "%word%"' filtering functionality when user selects words ('classic' => return results for 'classic', 'classics' column)
  - [ ] Display top X most popular songs and artists based on search.
  - [ ] Create interactive word cloud visualization for artist-specific playlist words.
  - [ ] Develop bar chart for word frequency.
