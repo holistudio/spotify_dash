@@ -29,8 +29,9 @@
  - [ ] Analyze the distribution of numerical audio features (e.g., tempo, energy, valence).
  - [ ] Explore relationships between mood words and audio features.
  - [ ] Preview Tableau dashboards
-    - [ ] Using Dataset 1: Identify top X most popular songs and artists for given mood words.
+    - [x] Using Dataset 1: Identify top X most popular songs and artists for given mood words.
     - [ ] Using Dataset 2: Analyze word frequency in playlists containing specific artists' songs.
+ - [ ] Ranking issue: Consider normalizing row-wise 'words_trackID.csv' - otherwise rankings not affected by uncommonly used playlist words.
 
 ## Dashboard
 
@@ -41,3 +42,4 @@
  - [ ] Develop bar chart for word frequency.
  - [ ] Implement filters for tempo and other numerical audio features.
  - [ ] Ensure dashboard is visually appealing and user-friendly.
+ - [ ] Show a list of valid words as the user types the vibes to ensure the input is within the possible list of playlist words.
