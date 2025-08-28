@@ -31,6 +31,7 @@
     - [x] Analyze distribution (mean, min, max) frequency of playlist words for all songs/tracks
     - [x] Decide on a cut-off threshold for "common enough" words to consider in ranking songs.
     - [x] Ranking issue: Consider normalizing row-wise 'words_trackID.csv' - otherwise rankings not affected by uncommonly used playlist words.
+    - [x] Detect songs that have > 0 bin counts for ALL words in the user input
 
  - [ ] Preview Tableau dashboards
     - [x] Using Dataset 1: Identify top X most popular songs and artists for given mood words.
@@ -44,7 +45,7 @@
 
 ## Dashboard
 
- - [ ] Basic wireframe draft.
+ - [x] Basic wireframe draft.
  - [ ] Design Tableau dashboard layout (left half for search/ranked lists, right half for word cloud/artist details, tertiary panel for filters).
  - [ ] Implement search functionality for mood keywords.
     - [ ] Simulate the 'LIKE "%word%"' filtering functionality when user selects words ('classic' => return results for 'classic', 'classics' column)
