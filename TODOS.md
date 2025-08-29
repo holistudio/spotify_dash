@@ -46,7 +46,22 @@
 ## Dashboard
 
  - [x] Basic wireframe draft.
+ - [x] Mini Tableau version first: Dataset is still big. Get draft versions of the dashboard viz with mini dataset first.
+    - [x] Basic Artist Vibe Bar Chart
+    - [x] Basic Artist Vibe Word Cloud
+    - [x] Basic Table Ranking Track IDs by User Word
+ - [x] Re-create data sources for large datasets "pre-pivoted"
+    - [x] Datasource 1: Playlist Word (many duplicates) | track_id (duplicates) | all_other_features (duplicates) | norm_bin_count (for the specific Playlist Word)
+    - [x] Datasource 2: Artist (many duplicates) | Playlist Word (duplicates) | bin_count (for the specific Playlist Word)
+ - [x] Re-make in final Tableau dashboard
+    - [x] Table 1 Rank Songs by Vibe Word List
+    - [x] Artist Vibe Bar Chart
+    - [x] Artist Vibe Word Cloud
+ - [ ] Refine
+    - [ ] Table 1: Filter out songs that have > 0 bin counts for ALL words in the user input
+    
  - [ ] Design Tableau dashboard layout (left half for search/ranked lists, right half for word cloud/artist details, tertiary panel for filters).
+ 
  - [ ] Implement search functionality for mood keywords.
     - [ ] Simulate the 'LIKE "%word%"' filtering functionality when user selects words ('classic' => return results for 'classic', 'classics' column)
  - [ ] Display top X most popular songs and artists based on search.
